@@ -27,11 +27,11 @@ spring:
         - id: employee-service
           uri: lb://employee-service
           predicates:
-            - Path="/employees/**"
+            - Path=/employees/**
         - id: department-service
           uri: lb://department-service
           predicates:
-            - Path="/departments/**"
+            - Path=/departments/**
 ```
 
 ## API Testing
